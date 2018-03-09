@@ -1,0 +1,8 @@
+https://bbs.uku.im/t/topic/27
+http://pac.uku.im/pac.pac
+http://yo.uku.im/proxy.pac
+http://pac.unblockcn.com
+http://ipservice.163.com/isFromMainland
+
+158.69.209.100, 45.32.72.192, 45.63.69.42
+
