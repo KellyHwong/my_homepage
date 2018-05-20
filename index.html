@@ -50,27 +50,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="./index.html">Home</a></li>
                         <li><a href="./index.html#aboutme">ABOUT ME</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESEARCH EXPERIENCE<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="./index.html#researchexperience">Overview</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">More Info</li>
-                                <li><a href="./index.html#Realization-of-Micro-Drone-System-Design-and-Application">Realization of Micro Drone System Design and Application</a></li>
-                                <li><a href="./index.html#My-Experience-In-MCLab">My Experience in MCLab</a></li>
-                                <li><a href="../index.html#UAV-Visual-Navigation-System-Design-Based-on-2D-Code">UAV Visual Navigation System Design Based on 2D Code</a></li>
-                            </ul>
-                        </li>
                         <li><a href="./index.html#achievements">ACHIVEMENTS</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROJECTS<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="./index.html#projects">Overview</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">More Info</li>
-                                <li><a href="./Wireless-Impedance-Sensor-System.html">Wireless Impedance Sensor System</a></li>
-                            </ul>
-                        </li>
                         <li><a href="https://zhuanlan.zhihu.com/kellyhwong">BLOG</a></li>
                     </ul>
                 </div>
@@ -90,12 +70,13 @@
                     <p>Major: Electronics and Information Engineering</p>
                     <p>GPA: 88.75/100,  Ranking: 5/171</p>
                     <p>Hong Kong Univ. of Sci. and Tech. (HKUST) as postgraduate Sep 2016 ~ Now, Hong Kong SAR, China</p>
-                    <p>Dept: Department of Electronic and Computer Engineering</p>
+                    <p>Dept: Department of Electronic and Computer Engineering
+                        (refer to <a href="http://www.ece.ust.hk/ece.php/profile/studentdetail/1506" target="_blank">ECE Student Detail</a>)</p>
                     <p>Lab: Robotic Institute</p>
                     <h4>Contact Info</h4>
                     <p>Email: khuangak@connect.ust.hk</p>
                     <p>Tel: +852 51694420</p>
-                    <p>Address: Tseung Kwan O, NT, Hong Kong</p>
+                    <p>Address: RI, CYT 2F, HKUST, NT, Hong Kong</p>
                     <!--<h5><a href="http://159.203.247.160:8082/KanHuang-CV-HKUST.pdf">My CV Download</a></h5>-->
                     <!--<p><a href="./files/KanHuang-CV-HKUST.pdf">My CV Download</a></p>-->
                     <p><a href="./More-Introduction-About-Myself.html">More Introduction About Myselft</a></p>
@@ -104,53 +85,63 @@
                     <img alt="Kelly Kan Huang" src="img/kelly-kan-huang.jpg" style="padding-top: 64px; width: auto; height: 450px">
                 </div>-->
             </div>
-            <div id="div1"></div>
-            <script>
-                $("#div1").KianaInit({
-                    randomPosition:true
-                });
-            </script>
-            <div> <!--Research Experience-->
-                <h3 name="researchexperience">Research Experience</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-xs-12 col-md-8">
-                        <a name="Realization-of-Micro-Drone-System-Design-and-Application"></a>
-                        <h4>Realization of Micro Drone System Design and Application</h4>
-                        <h5>Abstract</h5>
-                        <p>
-                        系统硬件方面采用STM32F407DISCOVERY 开发板为核心处理器。该处理器内核架构为ARM-Cortex-M4,具有高性能、低成本、低功耗等特点。其他硬件模块用有、无线蓝牙模块、MPU6050 运动数据获取模块、超声波模块、无刷电机调节器（4 个）、无刷电机（4 个）。
-软件控制方面。1.利用获取到的XYZ 三轴的加速度，以及系统与XYZ 三轴之间的夹角，采用四元素解算算法，获得系统当前的运动姿态，即ROL(翻滚角)、PIT(俯仰角)、YAW（方向角）。2.采用PID 自稳控制算法，使系统稳定的达到相对稳定的平衡状态。 </p>
-                        <p>
-                            The pity is that, due to lack of experience in PID arguments modifying, the micro drone didn’t work totally fine in the end. Nevertheless, I still got a lot in this project.
-                        </p>
-                        <p><a href="./files/HuangKan-Realization-of-Micro-Drone-System-Design-and-Application.pdf">Report Download</a></p>
-                        <!--<h5><a href="./GreedySnake.html" target="_blank">More Info</a></h5>-->
-                        <a name="My-Experience-In-MCLab"></a>
-                        <h4>My Experience in MCLab</h4>
-                        <p>MCLab, which’s full name is Media and Communication Lab, is a producing laboratory located in HUST(Huazhong Univ. of Sci. and Tech.). During my internship in MCLab, I mainly research in the improvement in 3D model retrieval.
-                        <h5>Basics of 3D model retrieval</h5>
-                        <p>There are two 3D model database, the larger one is called TSB and the smaller one is PSB. Using the extracting 64 pictures of each model of TSB as training data, train a neural network model. Extract features of each model in PSB. For each model of TSB and PSB, it has 64 feature vectors. Then calculate the Hausdorff distance between models. Predicting the type of a 3D model according to this distance. </p>
-                        <h5>Compare between torch framework and caffe</h5>
-                        <p>Caffe is a great framework, which is integrated with powerful functions, the only thing you need to do is to write prototxt configure files. But, the realization of its function is transparent for users, and moreover, different version of caffe may confront with each other, leading to a situation that merging all kinds of new function into it is a quite difficult project, unless you read through caffe’s source code.
-In the mean time, torch can guide you through the programming from modeling to neural network forward and backward computing. You can learn a lot from this. Also, torch is flexible enough to include and integrate all kinds of functions.</p>
-                        <h5>Reference</h5>
-                        <p>
-                            Song Bai, Neural Shape Codes for 3D Model Retrieval<br />
-                            PANORAMA: A 3D Shape Descriptor Based on Panoramic Views for Unsupervised 3D Object Retrieval<br />
-                            Chen-Yu Lee, Saining Xie, etc, Deeply-Supervised Nets
-                        </p>
-                        <a name="UAV-Visual-Navigation-System-Design-Based-on-2D-Code"></a>
-                        <h>UAV Visual Navigation System Design Based on 2D Code</h4>
-                        <p>This is my graduation project. In this project, I mainly realize the recognition algorithm for a kind of 2D code called AprilTag code. This code is highly error detectable, easily to be recognized by a camera. It is better to be used as object tracking than QR code.</p>
-                        <p>I learnt the programming of ROS(Robotic Operation System) on the DJI M100 platform, and transplant the algorithm into M100. After programming for the camera of M100, I realize the real-time AprilTag detection of the camera of M100.</p>
-                    </div>
-                    <div class="col-xs-6 col-md-4">
-                        <a href="https://youtu.be/cQ1iSv82Aq8" target="_blank"><img alt="Micro Drone" src="img/Micro-Drone.jpg" style="padding-top: 64px; width: auto; height: 450px"></a>
-                        <p>Click the picture for debugging video</p>
-                    </div>
-                </div>
+            <div>
+                <h4 name="skillStack">Skill Stack</h3>
+                <p>Embeded Software(STM32, FPGA)</p>
+                <p>Mobile Development(iOS/Android)</p>
+                <p>Server Programming(Backend, DataBase)</p>
+                <h4>Programming Languages</h3>
+                <p>C/C++</p>
+                <p>Matlab</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>Swift</p>
+                <p>JavaScript</p>
+                <h4>Research Areas</h3>
+                <p>Indoor Localization</p>
+                <p>Machine Learning</p>
+                <p>Robotic Perception</p>
+                <p>SLAM</p>
             </div>
+            <!--
+            <div id="div1"></div>
+                        <script>
+                            $("#div1").KianaInit({
+                                randomPosition:true
+                            });
+                            var startPosition, endPosition, deltaX ;
+            $("#div1").addEventListener('touchstart', function (e) {
+                var touch = e.touches[0];
+                startPosition = {
+                    x: touch.pageX,
+                    y: touch.pageY
+                }
+            });
+
+            $("#div1").addEventListener('touchmove', function (e) {
+                var touch = e.touches[0];
+                endPosition = {
+                    x: touch.pageX,
+                    y: touch.pageY
+                }
+
+                deltaX = endPosition.x - startPosition.x;
+                deltaY = endPosition.y - startPosition.y;
+            });
+            </script>
+        -->
+            <div><!--Learned Courses-->
+                <h4>Learned Course</h3>
+                <p>ELEC5600: Linear System Theory</p>
+                <p>COMP5421: Computer Vision</p>
+                <p>ELEC5640: Robotic Manipulation</p>
+                <p>ELEC6910R: Robotic Perception and Learning</p>
+                <p>MATH6380O: Deep Learning</p>
+
+                <h4>Teaching Assistant</h3>
+                <p>ELEC2600: Stochastic Process</p>
+            </div>
+
 
             <div> <!--Achievements-->
                 <a name="achievements"></a>
@@ -170,22 +161,6 @@ In the mean time, torch can guide you through the programming from modeling to n
                 <p>2014.9: Contemporary Undergraduate Mathematical Contest in Modeling (held by CSIAM, China.),
 <strong>Successful Participant</strong></p>
             </div>
-            <div>
-                <a name="projects"></a>
-                <h3>Projects</h3>
-                <hr>
-                <p>There are both large project that I collaborate with other people and lillte projects that I carry out on my own.</p>
-                <h4>Undergraduate Innovation Project</h4>
-                <h5>Developing of Embedded Wireless Impedance Sensor System in the Concrete</h3>
-                <p>Progressing Period: 2014.5~2015.4</p>
-                <p>Project Status: completed successfully</p>
-                <p>Project Abstract: </p>
-                <h5><a href="./Embedded-Wireless Impedance-Sensor-System.html" target="_blank">More Info</a></h5>
-                <h4>Little Project</h4>
-                <h5>Greedy Snake</h5>
-                <h5><a href="./GreedySnake.html" target="_blank">More Info</a></h5>
-            </div>
-
         </div><!-- /.container -->
 
 
@@ -195,10 +170,6 @@ In the mean time, torch can guide you through the programming from modeling to n
                 <p class="text-muted">&copy;2016 HUANG Kan's HomePage. All rights resevered.</p>
             </div>
         </div>
-
-
-
-
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
