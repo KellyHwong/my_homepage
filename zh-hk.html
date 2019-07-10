@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="简体转繁体" />
+    <meta name="author" content="Kan HUANG" />
+    <link rel="icon" href="favicon.ico" />
+
+    <title>简体转繁体</title>
+
+    <script src="./src/js/zh-hk.js"></script>
+  </head>
+  <body>
+    <input type="text" id="zh-cn" name="zh-cn" />
+    <button
+      onclick="document.getElementById('demo').innerHTML = zh_hk(get_input())"
+    >
+      zh-hk
+    </button>
+    <p id="demo"></p>
+  </body>
+</html>
